@@ -11,7 +11,7 @@
   /* ===== Colors ===== */
   --body-color: #e4e9f7;
   --sidebar-color: #fff;
-  --primary-color: #695cfe;
+  --primary-color: #dc3545;
   --primary-color-light: #f6f5ff;
   --toggle-color: #ddd;
   --text-color: #707070;
@@ -116,13 +116,14 @@ body.dark {
 header .image-text .name {
   margin-top: 2px;
   font-size: 18px;
-  font-weight: 600;
 }
 
 header .image-text .profession {
   font-size: 16px;
   margin-top: -2px;
   display: block;
+  text-align: center;
+  font-weight: bold;
 }
 
 .sidebar header .image {
