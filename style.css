@@ -138,8 +138,12 @@ header .image-text .profession {
 }
 
 .sidebar header .image img {
-  width: 100px;
+  width: 150px;
   border-radius: 6px;
+}
+
+.sidebar.close .image img {
+  width: 100px;
 }
 
 .sidebar header .toggle {
@@ -220,8 +224,12 @@ body.dark .sidebar li a:hover .text {
   height: calc(100% - 55px);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+
   overflow-y: scroll;
+}
+
+.sidebar .menu-bar .bottom-content {
+  margin-top: 130px;
 }
 .menu-bar::-webkit-scrollbar {
   display: none;
@@ -254,6 +262,7 @@ body.dark .mode .sun-moon i.moon {
 .menu-bar .bottom-content .toggle-switch {
   position: absolute;
   right: 0;
+
   height: 100%;
   min-width: 60px;
   display: flex;

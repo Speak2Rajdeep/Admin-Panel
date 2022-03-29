@@ -109,8 +109,10 @@ body.dark {
 }
 
 .sidebar header .image-text {
-  display: flex;
   align-items: center;
+  height: auto;
+  width: auto;
+  vertical-align: middle;
 }
 .sidebar header .logo-text {
   display: flex;
@@ -136,8 +138,12 @@ header .image-text .profession {
 }
 
 .sidebar header .image img {
-  width: 100px;
+  width: 150px;
   border-radius: 6px;
+}
+
+.sidebar.close .image img {
+  width: 100px;
 }
 
 .sidebar header .toggle {
@@ -157,7 +163,6 @@ header .image-text .profession {
   cursor: pointer;
   transition: var(--tran-05);
 }
-
 body.dark .sidebar header .toggle {
   color: var(--text-color);
 }
@@ -214,11 +219,14 @@ body.dark .sidebar li a:hover .text {
   color: var(--text-color);
 }
 
+.sidebar .menu-bar .bottom-content {
+  margin-top: 130px;
+}
 .sidebar .menu-bar {
   height: calc(100% - 55px);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+
   overflow-y: scroll;
 }
 .menu-bar::-webkit-scrollbar {
