@@ -6,7 +6,10 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-
+.abc {
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 24px;
+}
 :root {
   /* ===== Colors ===== */
   --body-color: #e4e9f7;
@@ -106,8 +109,10 @@ body.dark {
 }
 
 .sidebar header .image-text {
-  display: flex;
   align-items: center;
+  height: auto;
+  width: auto;
+  vertical-align: middle;
 }
 .sidebar header .logo-text {
   display: flex;
