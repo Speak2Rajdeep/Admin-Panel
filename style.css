@@ -229,7 +229,10 @@ body.dark .sidebar li a:hover .text {
 }
 
 .sidebar .menu-bar .bottom-content {
-  margin-top: 130px;
+  margin-top: 175px;
+}
+.sidebar.close .menu-bar .bottom-content {
+  margin-top: 200px;
 }
 .menu-bar::-webkit-scrollbar {
   display: none;

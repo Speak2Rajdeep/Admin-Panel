@@ -218,9 +218,12 @@ body.dark .sidebar li a:hover .icon,
 body.dark .sidebar li a:hover .text {
   color: var(--text-color);
 }
-
 .sidebar .menu-bar .bottom-content {
-  margin-top: 130px;
+  margin-top: 175px;
+}
+
+.sidebar.close .menu-bar .bottom-content {
+  margin-top: 200px;
 }
 .sidebar .menu-bar {
   height: calc(100% - 55px);
