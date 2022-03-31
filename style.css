@@ -107,7 +107,17 @@ body.dark {
 .sidebar header {
   position: relative;
 }
-
+.sidebar header .image-text{
+  height: 100px;
+  
+  padding-top: 30px;
+}
+.sidebar.close .image-text {
+  height: 50px;
+  width: 50px;
+  padding-bottom: 100px;
+   
+}
 .sidebar header .image-text {
   align-items: center;
   height: auto;
@@ -138,8 +148,8 @@ header .image-text .profession {
 }
 
 .sidebar header .image img {
-  width: 150px;
-  border-radius: 6px;
+ height: 80px;
+  border-radius: 16px;
 }
 
 .sidebar.close .image img {
@@ -228,11 +238,12 @@ body.dark .sidebar li a:hover .text {
   overflow-y: scroll;
 }
 
+
 .sidebar .menu-bar .bottom-content {
   margin-top: 175px;
 }
 .sidebar.close .menu-bar .bottom-content {
-  margin-top: 200px;
+  margin-top: 150px;
 }
 .menu-bar::-webkit-scrollbar {
   display: none;
