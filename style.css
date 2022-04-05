@@ -240,10 +240,10 @@ body.dark .sidebar li a:hover .text {
 
 
 .sidebar .menu-bar .bottom-content {
-  margin-top: 175px;
+  margin-top: 105px;
 }
 .sidebar.close .menu-bar .bottom-content {
-  margin-top: 150px;
+  margin-top: 100px;
 }
 .menu-bar::-webkit-scrollbar {
   display: none;
