@@ -2,6 +2,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+<!--From Registration Page-->
+<meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="candidate.css">
+
+
+
+<!---->
+
+
+
+
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -209,238 +229,151 @@
           </div>
         </div>
       </nav>
-             
-      <!-- End Navbar -->
+        
       <div class="container-fluid py-4">
       
-      <div class="col-12">
-        <div class="card my-4">
-          <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
-            <div class="bg-gradient-primary shadow-primary border-radius-lg pt-4 pb-3">
-              <h6 class="text-white text-capitalize ps-3" style="text-align: center;font-size: 20px">Pending Request</h6>
+      <!-- End Navbar -->
+      <div class="container">
+        <header>Set Candidates</header>
+      
+        <form action="#" method="post" class="for">
+          <div id="main">
+            <div class="form first">
+              <div class="details personal">
+                <span class="title"></span>
+      
+      
+      
+                <div class="input-field">
+                  <label>Ward number&nbsp;&nbsp;&nbsp;</label>
+                  <input type="number" min="0" placeholder="Enter Ward Number" required>
+                </div>
+      
+                <div class="fields">
+                  <div class="input-field">
+                    <label>Party Name</label>
+                    <select required>
+                      <option disabled selected>Select Party Name</option>
+                      <option>Left Front</option>
+                      <option>Aam Admi Party</option>
+                      <option>Bharatiya Janta party</option>
+                      <option>All India Trinomool Congress</option>
+                    </select>
+                  </div>
+                  
+      
+                  <div class="fields">
+                    <label>Upload Party Flag&nbsp;&nbsp;&nbsp;</label><br>
+                    <input type="file" name="image" id="fileimage" required class="form-control"
+                      accept="image/png, image/jpeg, image/jpg" /><br />
+      
+      
+                  </div><br> <br> <br> <br>
+      
+                  <div class="input-field">
+                    <label>Candidate name</label>
+                    <input type="text" placeholder="Enter Candidate's name" required>
+                  </div>
+      
+                  <div class="fields">
+                    <label>Upload Candidate's Photo&nbsp;&nbsp;&nbsp;</label>
+                    <input type="file" name="image" id="fileimage" required class="form-control"
+                      accept="image/png, image/jpeg, image/jpg" /><br />
+      
+      
+                  </div>
+                  <div class="btnb" style="padding-bottom: 100px;">
+      
+      
+                    <button class="nextBtn" onclick="document.getElementById('ss').click()">
+                      <!--<a href="javascript:data()" type="button">-->Add More
+                      Candidates</a>
+      
+                      <i class="uil uil-plus"></i>
+                    </button>
+                  </div>
+      
+      
+      
+                  <div class="abcd" style="padding-top: 100px; padding-right: 370px;">
+                    <button class="nextBtn1" style="position: relative;">
+                      Submit
+      
+                      <i class="uil uil-upload"></i>
+                    </button>
+      
+                  </div>
+      
+                </div>
+              </div>
             </div>
+      
           </div>
-          <div class="card-body px-0 pb-2">
-            <div class="table-responsive p-0">
-              <table class="table align-items-center mb-0">
-                <thead>
-                  <tr>
-                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Image</th>
-                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Name</th>
-                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ">Adhaar ID
-                    </th>
-                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Email</th>
-                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Registered
-                      Date</th>
-                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Action</th>
+      </div>
       
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>
-                      <div class="d-flex px-2 py-1">
-                        <div>
-                          <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3 border-radius-lg" alt="user1">
-                        </div>
-                        <div class="d-flex flex-column justify-content-center">
-                          <h6 class="mb-0 text-sm">John Michael</h6>
-                          <p class="text-xs text-secondary mb-0">john@creative-tim.com</p>
-                        </div>
+      </form>
       
-                      </div>
       
-                    </td>
-                    <td>
-                      <p class="text-xs font-weight-bold mb-0">Manager</p>
-                      <p class="text-xs text-secondary mb-0">Organization</p>
-                    </td>
-                    <td class="align-middle text-center text-sm">
-                      <span class="text-xs font-weight-bold mb-0">XXXX-XXXX-XXXX</span>
-                    </td>
-                    <td class="align-middle text-center text-sm">
-                      <span class="text-xs font-weight-bold mb-0">abc@gmail.com</span>
-                    </td>
-                    <td class="align-middle text-center">
-                      <span class="text-secondary text-xs font-weight-bold">23/04/18</span>
-                    </td>
-                    <td class="align-middle">
-                      <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip"
-                        data-original-title="Edit user">
-                        Delete
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="d-flex px-2 py-1">
-                        <div>
-                          <img src="../assets/img/team-3.jpg" class="avatar avatar-sm me-3 border-radius-lg" alt="user2">
-                        </div>
-                        <div class="d-flex flex-column justify-content-center">
-                          <h6 class="mb-0 text-sm">Alexa Liras</h6>
-                          <p class="text-xs text-secondary mb-0">alexa@creative-tim.com</p>
-                        </div>
-                      </div>
-                    </td>
-                    <td>
-                      <p class="text-xs font-weight-bold mb-0">Programator</p>
-                      <p class="text-xs text-secondary mb-0">Developer</p>
-                    </td>
-                    <td class="align-middle text-center text-sm">
-                      <span class="text-xs font-weight-bold mb-0">XXXX-XXXX-XXXX</span>
-                    </td>
-                    <td class="align-middle text-center text-sm">
-                      <span class="text-xs font-weight-bold mb-0">abc@gmail.com</span>
-                    </td>
-                    <td class="align-middle text-center">
-                      <span class="text-secondary text-xs font-weight-bold">11/01/19</span>
-                    </td>
-                    <td class="align-middle">
-                      <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip"
-                        data-original-title="Edit user">
-                        Delete
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="d-flex px-2 py-1">
-                        <div>
-                          <img src="../assets/img/team-4.jpg" class="avatar avatar-sm me-3 border-radius-lg" alt="user3">
-                        </div>
-                        <div class="d-flex flex-column justify-content-center">
-                          <h6 class="mb-0 text-sm">Laurent Perrier</h6>
-                          <p class="text-xs text-secondary mb-0">laurent@creative-tim.com</p>
-                        </div>
-                      </div>
-                    </td>
-                    <td>
-                      <p class="text-xs font-weight-bold mb-0">Executive</p>
-                      <p class="text-xs text-secondary mb-0">Projects</p>
-                    </td>
-                    <td class="align-middle text-center text-sm">
-                      <span class="text-xs font-weight-bold mb-0">XXXX-XXXX-XXXX</span>
-                    </td>
-                    <td class="align-middle text-center text-sm">
-                      <span class="text-xs font-weight-bold mb-0">abc@gmail.com</span>
-                    </td>
-                    <td class="align-middle text-center">
-                      <span class="text-secondary text-xs font-weight-bold">19/09/17</span>
-                    </td>
-                    <td class="align-middle">
-                      <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip"
-                        data-original-title="Edit user">
-                        Delete
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="d-flex px-2 py-1">
-                        <div>
-                          <img src="../assets/img/team-3.jpg" class="avatar avatar-sm me-3 border-radius-lg" alt="user4">
-                        </div>
-                        <div class="d-flex flex-column justify-content-center">
-                          <h6 class="mb-0 text-sm">Michael Levi</h6>
-                          <p class="text-xs text-secondary mb-0">michael@creative-tim.com</p>
-                        </div>
-                      </div>
-                    </td>
-                    <td>
-                      <p class="text-xs font-weight-bold mb-0">Programator</p>
-                      <p class="text-xs text-secondary mb-0">Developer</p>
-                    </td>
-                    <td class="align-middle text-center text-sm">
-                      <span class="text-xs font-weight-bold mb-0">XXXX-XXXX-XXXX</span>
-                    </td>
-                    <td class="align-middle text-center text-sm">
-                      <span class="text-xs font-weight-bold mb-0">abc@gmail.com</span>
-                    </td>
-                    <td class="align-middle text-center">
-                      <span class="text-secondary text-xs font-weight-bold">24/12/08</span>
-                    </td>
-                    <td class="align-middle">
-                      <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip"
-                        data-original-title="Edit user">
-                        Delete
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="d-flex px-2 py-1">
-                        <div>
-                          <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3 border-radius-lg" alt="user5">
-                        </div>
-                        <div class="d-flex flex-column justify-content-center">
-                          <h6 class="mb-0 text-sm">Richard Gran</h6>
-                          <p class="text-xs text-secondary mb-0">richard@creative-tim.com</p>
-                        </div>
-                      </div>
-                    </td>
-                    <td>
-                      <p class="text-xs font-weight-bold mb-0">Manager</p>
-                      <p class="text-xs text-secondary mb-0">Executive</p>
-                    </td>
-                    <td class="align-middle text-center text-sm">
-                      <span class="text-xs font-weight-bold mb-0">XXXX-XXXX-XXXX</span>
-                    </td>
-                    <td class="align-middle text-center text-sm">
-                      <span class="text-xs font-weight-bold mb-0">abc@gmail.com</span>
-                    </td>
-                    <td class="align-middle text-center">
-                      <span class="text-secondary text-xs font-weight-bold">04/10/21</span>
-                    </td>
-                    <td class="align-middle">
-                      <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip"
-                        data-original-title="Edit user">
-                        Delete
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="d-flex px-2 py-1">
-                        <div>
-                          <img src="../assets/img/team-4.jpg" class="avatar avatar-sm me-3 border-radius-lg" alt="user6">
-                        </div>
-                        <div class="d-flex flex-column justify-content-center">
-                          <h6 class="mb-0 text-sm">Miriam Eric</h6>
-                          <p class="text-xs text-secondary mb-0">miriam@creative-tim.com</p>
-                        </div>
-                      </div>
-                    </td>
-                    <td>
-                      <p class="text-xs font-weight-bold mb-0">Programator</p>
-                      <p class="text-xs text-secondary mb-0">Developer</p>
-                    </td>
-                    <td class="align-middle text-center text-sm">
-                      <span class="text-xs font-weight-bold mb-0">XXXX-XXXX-XXXX</span>
-                    </td>
-                    <td class="align-middle text-center text-sm">
-                      <span class="text-xs font-weight-bold mb-0">abc@gmail.com</span>
-                    </td>
-                    <td class="align-middle text-center">
-                      <span class="text-secondary text-xs font-weight-bold">14/09/20</span>
-                    </td>
-                    <td class="align-middle">
-                      <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip"
-                        data-original-title="Edit user">
-                        Delete
-                      </a>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+      </div>
+      <!-- <button id="ss" class="bb"><a href="javascript:data()" hidden></a> </button>-->
+      <div id="subinput" class="for" style="display: none;">
+        <div class="form_sec">
+          <div class="details personal">
+            <span class="title"></span>
+      
+      
+      
+            <div class="input-field">
+              <label>Ward number&nbsp;&nbsp;&nbsp;</label>
+              <input type="number" min="0" placeholder="Enter Ward Number" required>
             </div>
+      
+            <div class="fields">
+              <div class="input-field">
+                <label>Party Name</label>
+                <select required>
+                  <option disabled selected>Select Party Name</option>
+                  <option>Left Front</option>
+                  <option>Aam Admi Party</option>
+                  <option>Bharatiya Janta party</option>
+                  <option>All India Trinomool Congress</option>
+                </select>
+              </div>
+      
+              <div class="fields">
+                <label>Upload Party Flag&nbsp;&nbsp;&nbsp;</label><br>
+                <input type="file" name="image" id="fileimage" required class="form-control"
+                  accept="image/png, image/jpeg, image/jpg" /><br />
+      
+      
+              </div>
+      
+              <div class="input-field">
+                <label>Candidate name</label>
+                <input type="text" placeholder="Enter Candidate's name" required>
+              </div>
+      
+              <div class="fields">
+                <label>Upload Candidate's Photo&nbsp;&nbsp;&nbsp;</label>
+                <input type="file" name="image" id="fileimage" required class="form-control"
+                  accept="image/png, image/jpeg, image/jpg" /><br />
+      
+      
+              </div>
+      
+            </div>
+      
+      
+      
+      
+      
           </div>
         </div>
+
       </div>
-      
-      
-    
-      </div>
+
+
+        
     </section>
 </main>
 
@@ -450,7 +383,29 @@
 
 
 
+<script src="script.js"></script>
 
+
+<script>
+  var a = 1;
+  function data() {
+    a++;
+    var input = document.createElement("div");
+    var dtd = '<div></div>';
+    input.innerHTML = document.getElementById('subinput').innerHTML + dtd;
+    document.getElementById("main").append(input);
+
+
+  }
+
+
+
+</script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 
 
