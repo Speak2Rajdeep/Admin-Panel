@@ -137,9 +137,14 @@ header .image-text .profession {
   justify-content: center;
 }
 
+
 .sidebar header .image img {
   
   border-radius: 6px;
+}
+
+.sidebar.close .container{
+  color: #dc3545;
 }
 
 .sidebar.close .image img {
