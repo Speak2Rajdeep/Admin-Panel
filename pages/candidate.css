@@ -100,11 +100,41 @@ form.secActive .form.first{
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
+#fileimage{
+
+    border:groove;
+}
 form .fields .input-field{
     display: flex;
     width: calc(100% / 3 - 15px);
     flex-direction: column;
     margin: 4px 0;
+    
+}
+
+#bbb{
+    color: #9a131a;
+}
+#abc{
+    padding-left: 310px;
+    
+    float: right;
+}
+
+#bcd{
+    padding-left: 201px;
+    
+    float: right;
+}
+
+form .fields .input-field1 {
+    display: flex;
+    width: calc(100% / 3 - 15px);
+    flex-direction: column;
+    margin: 4px 0;
+    padding-bottom: 100px;;
+
 }
 .input-field label{
     font-size: 16px;
