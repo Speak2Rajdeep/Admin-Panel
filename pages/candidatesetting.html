@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!----======== CSS ======== -->
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="candidate.css">
@@ -33,6 +33,17 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
   <!-- CSS Files -->
   <link id="pagestyle" href="./assets/css/material-dashboard.css?v=3.0.0" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700,900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../assets/fonts/icomoon/style.css" >
+
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+
+<!-- Style -->
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/pages/css/style.css">
 
 
 </head>
@@ -152,7 +163,7 @@
             <div class="ms-md-auto pe-md-3 d-flex align-items-center">
               <div class="">
 
-                <input type="text" class="form-control">
+              
               </div>
             </div>
             <ul class="navbar-nav  justify-content-end" style="">
@@ -229,79 +240,61 @@
               </div>
             </div>
             <div class="card-body px-0 pb-2">
-            <div class="container">
-
-             
-              
+            <div class="content">
             
-              <form action="#" method="post" class="for">
-                <div id="main">
-                  <div class="form first">
-                    <div class="details personal">
-                      <span class="title"></span>
+                    <div class="box">
+                      
+                      <form class="mb-5" method="post" id="contactForm" name="contactForm">
+                        <div class="row">
             
-            
-            
-                      <div class="input-field">
-                        <label>Ward number&nbsp;&nbsp;&nbsp;</label>
-                        <input type="number" min="0" placeholder="Enter Ward Number" required>
-                      </div>
-            
-                      <div class="fields">
-                        <div class="input-field">
-                          <label>Party Name</label>
-                          <select required>
-                            <option disabled selected>Select Party Name</option>
-                            <option>Left Front</option>
-                            <option>Aam Admi Party</option>
-                            <option>Bharatiya Janta party</option>
-                            <option>All India Trinomool Congress</option>
-                          </select>
+                          <div class="col-md-6 form-group">
+                            <label for="name" class="col-form-label">Ward Number*</label>
+                            <input type="text" class="form-control" name="name" id="name" placeholder="Enter Your Ward Number">
+                          </div>
+                          <div class="col-md-6 form-group">
+                            <label for="budget" class="col-form-label">Party Name</label>
+                            <select class="custom-select" id="budget" name="budget">
+                              <option selected>Choose Party Name</option>
+                              <option value="$1000 below">Left front</option>
+                              <option value="$2,000 - $5,000">Aam Admi Party</option>
+                              <option value="$5,000 - $15,000">Bharatiya Janta Party</option>
+                              <option value="$15,000 - $25,000">All India Trinomool Congress</option>
+                              
+                            </select>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-12 form-group">
+                            <label for="message" class="col-form-label">Party Flag</label>
+                            <input type="text" class="form-control" name="Enter Candidate's Name" id="message" cols="30" rows="7"></input>
+                          </div>
                         </div>
             
-                        <div class="fields" id="abc">
-                          <label>Upload Party Flag&nbsp;&nbsp;&nbsp;</label><br>
-                          <input type="file" name="image" id="fileimage" required class="form-control"
-                            accept="image/png, image/jpeg, image/jpg" /><br />
-            
-            
-                        </div><br> <br>
-            
-                        <div class="input-field">
-                          <label>Candidate name</label>
-                          <input type="text" placeholder="Enter Candidate's name" required>
+                        <div class="row">
+                          <div class="col-md-12 form-group">
+                            <label for="message" class="col-form-label">Candidate Name</label>
+                            <input type="text" class="form-control" name="Enter Candidate's Name" id="message" cols="30" rows="7"></input>
+                          </div>
                         </div>
-
                         
-            
-                        <div class="fields" id="bcd"  style="">
-                          <label>Upload Candidate's Photo&nbsp;&nbsp;&nbsp;</label><br>
-                          <input type="file" name="image" id="fileimage" required class="form-control" 
-                            accept="image/png, image/jpeg, image/jpg" /><br />
-            
-            
-                        </div>
-                        <div class="btnb" style="padding-bottom: 0px;">
+                          <div class="col-md-6 form-group">
+                            <label>Upload Candidate's Photo&nbsp;&nbsp;&nbsp;</label>
+                            <input type="file" name="image" id="fileimage" required class="form-control"
+                              accept="image/png, image/jpeg, image/jpg" />
             
             
-                          <button class="nextBtn" onclick="document.getElementById('ss').click()">
-                            <!--<a href="javascript:data()" type="button">-->Add More
-                            Candidates</a>
-            
-                            <i class="uil uil-plus"></i>
-                          </button>
+                          </div>
                         </div>
             
+                        
+                      </form>
             
-            
-                        <div class="abcd" id="bbb" style="padding-top: 100px; padding-right: 670px; float: right;">
-                          <button class="nextBtn1" style=" margin-left: 100px;">
-                            Submit
-            
-                            <i class="uil uil-upload"></i>
-                          </button>
-              </form>
-                        </div>
+                      
+                     
+                   
+                  
+                </div>
+              
             
                       </div>
                     </div>
@@ -386,7 +379,11 @@
 
 
 
-
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/main.js"></script>
 
 
   <script src="../assets/js/core/popper.min.js"></script>
