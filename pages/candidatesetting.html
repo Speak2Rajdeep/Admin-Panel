@@ -1,154 +1,139 @@
 <!-- Coding by CodingLab | www.codinglabweb.com -->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!----======== CSS ======== -->
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="candidate.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="candi.css">
+    <!----===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+   
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="./assets/img/favicon.png">
+    <title>
+     Database part extraction Page
+    </title>
+    <!--     Fonts and icons     -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
+    <!-- Nucleo Icons -->
+    <link href="./assets/css/nucleo-icons.css" rel="stylesheet" />
+    <link href="./assets/css/nucleo-svg.css" rel="stylesheet" />
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <!-- CSS Files -->
+    <link id="pagestyle" href="./assets/css/material-dashboard.css?v=3.0.0" rel="stylesheet" />
 
-  <!----===== Boxicons CSS ===== -->
-  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png">
-  <link rel="icon" type="image/png" href="./assets/img/favicon.png">
-  <title>
-    Setting Candidate Page
-  </title>
-  <!--     Fonts and icons     -->
-  <link rel="stylesheet" type="text/css"
-    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
-  <!-- Nucleo Icons -->
-  <link href="./assets/css/nucleo-icons.css" rel="stylesheet" />
-  <link href="./assets/css/nucleo-svg.css" rel="stylesheet" />
-  <!-- Font Awesome Icons -->
-  <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
-  <!-- Material Icons -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
-  <!-- CSS Files -->
-  <link id="pagestyle" href="./assets/css/material-dashboard.css?v=3.0.0" rel="stylesheet" />
-<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700,900&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="../assets/fonts/icomoon/style.css" >
-
-
-<!-- Bootstrap CSS -->
-<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
-
-<!-- Style -->
-<link rel="stylesheet" href="../assets/css/style.css">
-<link rel="stylesheet" href="../assets/pages/css/style.css">
-
-
+    
 </head>
-
 <body>
-  <nav class="sidebar close">
-    <header>
-      <div class="image-text">
-        <span class="image">
-          <img src="logo.png" alt="" height="80px" width="80px">
-        </span>
-        <!--Welcome Admin
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="logo.png" alt="" height="80px" width="80px">
+                </span>
+<!--Welcome Admin
   ===========================================
                 <div class="text logo-text">
                     <span class="name"><i>WELCOME </i></span>
                     <span class="profession">ADMIN</span>
                 </div>-->
-      </div>
+            </div>
 
-      <i class='bx bx-chevron-right toggle'></i>
-    </header>
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
 
-    <div class="menu-bar">
-      <div class="menu">
+        <div class="menu-bar">
+            <div class="menu">
 
-        <li class="search-box" style="visibility: hidden">
+                <li class="search-box" style="visibility: hidden">
+                   
+                     
+                </li>
 
+                <ul class="menu-links">
 
-        </li>
+                  
+                    <li class="nav-link">
+                        <a class="nav-link text-white " href="../index.html">
+                            <i class='bx bx-home-alt icon' title="Dashboard" ></i>
+                            <span class="text nav-text" title="Dashboard">Dashboard</span>
+                        </a>
+                    </li>
 
-        <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="databasepart.html">
+                            <i class='bx bx-bar-chart-alt-2 icon' title="Database Part" ></i>
+                            <span class="text nav-text" title="Database Part">Database Part</span>
+                        </a>
+                    </li>
 
+                    
 
-          <li class="nav-link">
-            <a class="nav-link text-white " href="../index.html">
-              <i class='bx bx-home-alt icon' title="Dashboard"></i>
-              <span class="text nav-text" title="Dashboard">Dashboard</span>
-            </a>
-          </li>
+                    <li class="nav-link">
+                        <a href="pendingrequest.html">
+                             <i class='bx bx-hourglass icon' title="Pending Requset" ></i>
+                            <span class="text nav-text" title="Pending Request">Pending request</span>
+                        </a>
+                    </li>
 
-          <li class="nav-link">
-            <a href="databasepart.html">
-              <i class='bx bx-bar-chart-alt-2 icon' title="Database Part"></i>
-              <span class="text nav-text" title="Database Part">Database Part</span>
-            </a>
-          </li>
+                    <li class="nav-link">
+                        <a href="Noti.html">
+                            <i class='bx bx-bell icon' title="Notification"></i>
+                            <span class="text nav-text" title="Notification">Notifications</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                      <a href="candidatesetting.html">
+                        <i class='bx bx-user icon' title="Candidate"></i>
+                        <span class="text nav-text" title="Candidates">Candidates</span>
+                      </a>
+                    </li>
 
+                
 
+                </ul>
+            </div>
 
-          <li class="nav-link">
-            <a href="pendingrequest.html">
-              <i class='bx bx-hourglass icon' title="Pending Requset"></i>
-              <span class="text nav-text" title="Pending Request">Pending request</span>
-            </a>
-          </li>
+            <div class="bottom-content">
+                <li class="">
+                    <a href="#">
+                        <i class='bx bx-log-out icon' title="Logout" ></i>
+                        <span class="text nav-text" title="Logout">Logout</span>
+                    </a>
+                </li>
 
-          <li class="nav-link">
-            <a href="Noti.html">
-              <i class='bx bx-bell icon' title="Notification"></i>
-              <span class="text nav-text" title="Notification">Notifications</span>
-            </a>
-          </li>
-          <li class="nav-link">
-            <a href="candidatesetting.html">
-              <i class='bx bx-user icon' title="Candidate"></i>
-              <span class="text nav-text" title="Candidates">Candidates</span>
-            </a>
-          </li>
+                
+            </div>
+        </div>
 
+    </nav>
 
+    <section class="home">
+        <div class="text">
 
-        </ul>
-      </div>
-
-      <div class="bottom-content">
-        <li class="">
-          <a href="#">
-            <i class='bx bx-log-out icon' title="Logout"></i>
-            <span class="text nav-text" title="Logout">Logout</span>
-          </a>
-        </li>
-
-
-      </div>
-    </div>
-
-  </nav>
-
-  <section class="home">
-    <div class="text">
-
-      <nav aria-label="breadcrumb">
-
-
-      </nav>
-
-    </div>
-
-
-
+          <nav aria-label="breadcrumb">
+            
+            
+          </nav>
+          
+        </div>
+       
+    
+   
 
     <script src="script.js"></script>
 
 
-
+    
 
     <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
       <!-- Navbar -->
@@ -156,36 +141,35 @@
         navbar-scroll="true">
         <div class="container-fluid py-1 px-3">
           <nav aria-label="breadcrumb">
-
+      
             <h3 class="font-weight-bolder mb-0">Set Candidates</h3>
           </nav>
           <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
             <div class="ms-md-auto pe-md-3 d-flex align-items-center">
               <div class="">
-
-              
+      
+                <input type="text" class="form-control">
               </div>
             </div>
-            <ul class="navbar-nav  justify-content-end" style="">
+            <ul class="navbar-nav  justify-content-end" style="padding-top: -40px;">
               <li class="nav-item d-flex align-items-center">
                 <a href="javascript:;" class="nav-link text-body font-weight-bold px-0">
-
-
+                  
+                  
                 </a>
-              </li>
-              <li class="nav-item d-flex align-items-center">
+              </li><li class="nav-item d-flex align-items-center">
                 <a href="javascript:;" class="nav-link text-body font-weight-bold px-0">
               <li style="margin-left: 100px">
                 <a href="index.html" class="font-weight-bolder mb-0">
-
+              
                   <div class="abc">
                     Welcome Admin
-
+              
                     <img src="https://vitalistore.com/wp-content/uploads/2021/10/009_L.jpg" alt="Avatar"
                       style="width: 50px; border-radius: 60%" />
                   </div>
                 </a>
-
+              
                 <!-- /.sub-menu -->
               </li></a>
               </li>
@@ -210,167 +194,115 @@
                 </a>
                 <ul class="dropdown-menu  dropdown-menu-end  px-2 py-3 me-sm-n4" aria-labelledby="dropdownMenuButton">
                   <li class="mb-2">
-
+      
                   </li>
                   <li class="mb-2">
                     <a class="dropdown-item border-radius-md" href="javascript:;">
-
+      
                     </a>
                   </li>
-
+      
                 </ul>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-
+             
       <!-- End Navbar -->
       <div class="container-fluid py-4">
-
-
-
-        <div class="col-12">
-          
-          
-            <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
-              <div class="bg-gradient-primary shadow-primary border-radius-lg pt-4 pb-3">
-                <h6 class="text-white text-capitalize ps-3" style="text-align: center; font-size: 20px">Setting Up Candidates
-                </h6>
-              </div>
-            </div>
-            <div class="card-body px-0 pb-2">
-            <div class="content">
-            
-                    <div class="box">
-                      
-                      <form class="mb-5" method="post" id="contactForm" name="contactForm">
-                        <div class="row">
-            
-                          <div class="col-md-6 form-group">
-                            <label for="name" class="col-form-label">Ward Number*</label>
-                            <input type="text" class="form-control" name="name" id="name" placeholder="Enter Your Ward Number">
-                          </div>
-                          <div class="col-md-6 form-group">
-                            <label for="budget" class="col-form-label">Party Name</label>
-                            <select class="custom-select" id="budget" name="budget">
-                              <option selected>Choose Party Name</option>
-                              <option value="$1000 below">Left front</option>
-                              <option value="$2,000 - $5,000">Aam Admi Party</option>
-                              <option value="$5,000 - $15,000">Bharatiya Janta Party</option>
-                              <option value="$15,000 - $25,000">All India Trinomool Congress</option>
-                              
-                            </select>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-md-12 form-group">
-                            <label for="message" class="col-form-label">Party Flag</label>
-                            <input type="text" class="form-control" name="Enter Candidate's Name" id="message" cols="30" rows="7"></input>
-                          </div>
-                        </div>
-            
-                        <div class="row">
-                          <div class="col-md-12 form-group">
-                            <label for="message" class="col-form-label">Candidate Name</label>
-                            <input type="text" class="form-control" name="Enter Candidate's Name" id="message" cols="30" rows="7"></input>
-                          </div>
-                        </div>
-                        
-                          <div class="col-md-6 form-group">
-                            <label>Upload Candidate's Photo&nbsp;&nbsp;&nbsp;</label>
-                            <input type="file" name="image" id="fileimage" required class="form-control"
-                              accept="image/png, image/jpeg, image/jpg" />
-            
-            
-                          </div>
-                        </div>
-            
-                        
-                      </form>
-            
-                      
-                     
-                   
-                  
+       
+           <div class="col-12">
+            <div class="card my-4" style="background-color: #f4433530 ">
+              <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
+                <div class="bg-gradient-primary shadow-primary border-radius-lg pt-4 pb-3">
+                  <h6 class="text-white text-capitalize ps-3" style="text-align: center; font-size: 20px" >Setting Up Candidates</h6>
                 </div>
+              </div>
               
-            
-                      </div>
-                    </div>
+
+              <div class="form_wrapper">
+                <div class="form_container">
+                  <div class="title_container">
+                    
                   </div>
-            
-                </div>
-            
-            
-          </div>
+                  <div class="row clearfix">
+                    <div class="" >
+                      <form th:href="@{'/index'}">
+              
+              
+              
+              
+                         <div class="input_field"> 
+                          <input style="padding: 5px; padding-left: 10px;" type="number" th:field="*{firstname}" min="0" name="Ward Number" placeholder="Enter Ward Number" pattern="[0-9]" required />
+                        </div>
+              
+              
+                        
+              
+              
+              
+                        <div class="input_field select_option">
+                              <select required th:field="*{firstname}">
+                                <option disabled selected>Enter Party Name</option>
+                                <option>Left Front</option>
+                                <option>Aam Admi Party</option>
+                                <option>Bharatiya Janta Party</option>
+                                <option>All India Trinomool Congress</option>
+                              </select>
+                              <div class="select_arrow"></div>
+                            </div>
+              
+              
+              <div class="input_field" >
+                <label>Upload Party's Photo&nbsp;&nbsp;&nbsp;</label> <br><br>
+                <input type="file" style="border: thick;" name="image" th:field="*{firstname}" id="fileimage" required class="form-control"
+                  accept="image/png, image/jpeg, image/jpg" /><br />
 
 
-<!--
-            <div id="subinput" class="for" style="display: none;">
-              <div class="form_sec">
-                <div class="details personal">
-                  <span class="title"></span>
-            
-            
-            
-                  <div class="input-field">
-                    <label>Ward number&nbsp;&nbsp;&nbsp;</label>
-                    <input type="number" min="0" placeholder="Enter Ward Number" required>
+                  <p>
+                <img id="thumbnail"  src="" height="200px" width="150px"
+                  style="margin-left: 200px; display: none" />
+              </p>
+              
+              
+              </div>
+              
+                            
+                        <div class="input_field"> 
+                          <input type="text" name="cname" placeholder="Enter Candidate's Name"  th:field="*{firstname}"required />
+                        </div>
+                       
+                         <div class="input_field">
+                                  <label>Upload Candidate's Photo&nbsp;&nbsp;&nbsp;</label><br><br>
+                                  <input type="file" name="image" id="fileimage"  th:field="*{firstname}" required class="form-control"
+                                      accept="image/png, image/jpeg, image/jpg" /><br />
+              <p>
+                <img id="thumbnail"  src="" height="200px" width="150px"
+                  style="margin-left: 200px; display: none" />
+              </p>
+              
+                              </div>
+                        
+                          
+                            
+                          
+                        <input class="button" type="submit" value="Upload" />
+                      </form>
+                    </div>
                   </div>
-            
-                  <div class="fields">
-                    <div class="input-field">
-                      <label>Party Name</label>
-                      <select required>
-                        <option disabled selected>Select Party Name</option>
-                        <option>Left Front</option>
-                        <option>Aam Admi Party</option>
-                        <option>Bharatiya Janta party</option>
-                        <option>All India Trinomool Congress</option>
-                      </select>
-                    </div>
-            
-                    <div class="fields">
-                      <label>Upload Party Flag&nbsp;&nbsp;&nbsp;</label>
-                      <input type="file" name="image" id="fileimage" required class="form-control"
-                        accept="image/png, image/jpeg, image/jpg" />
-            
-            
-                    </div>
-            
-                    <div class="input-field">
-                      <label>Candidate name</label>
-                      <input type="text" placeholder="Enter Candidate's name" required>
-                    </div>
-            
-                    <div class="fields">
-                      <label>Upload Candidate's Photo&nbsp;&nbsp;&nbsp;</label>
-                      <input type="file" name="image" id="fileimage" required class="form-control"
-                        accept="image/png, image/jpeg, image/jpg" />
-            
-            
-                    </div>
-            
-                  </div>
-            
-            
-            
-            
-            
                 </div>
               </div>
-            
+  <br>
+
             </div>
-            </div>
-          </div>
-        </div>-->
-
-
+          </div> 
+        
       
-      
-  </section>
-  </main>
+        
+      </div>
+    </section>
+</main>
 
 
 
@@ -379,54 +311,48 @@
 
 
 
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.validate.min.js"></script>
-  <script src="js/main.js"></script>
 
 
-  <script src="../assets/js/core/popper.min.js"></script>
-  <script src="../assets/js/core/bootstrap.min.js"></script>
-  <script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
-  <script src="../assets/js/plugins/smooth-scrollbar.min.js"></script>
-  <script>
-    var win = navigator.platform.indexOf('Win') > -1;
-    if (win && document.querySelector('#sidenav-scrollbar')) {
-      var options = {
-        damping: '0.5'
-      }
-      Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
-    }
-  </script>
-  <!-- Github buttons -->
-  <script async defer src="https://buttons.github.io/buttons.js"></script>
-  <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
-  <script src="../assets/js/material-dashboard.min.js?v=3.0.1"></script>
-<script src="script.js"></script>
 
-
+<script src="../assets/js/core/popper.min.js"></script>
+<script src="../assets/js/core/bootstrap.min.js"></script>
+<script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
+<script src="../assets/js/plugins/smooth-scrollbar.min.js"></script>
 <script>
-  var a = 1;
-  function data() {
-    a++;
-    var input = document.createElement("div");
-    var dtd = '<div></div>';
-    input.innerHTML = document.getElementById('subinput').innerHTML + dtd;
-    document.getElementById("main").append(input);
-
-
+  var win = navigator.platform.indexOf('Win') > -1;
+  if (win && document.querySelector('#sidenav-scrollbar')) {
+    var options = {
+      damping: '0.5'
+    }
+    Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
   }
 
 
 
+  $(document).ready(function () {
+    $("#fileimage").change(function () {
+      showImageThumbnail(this);
+    });
+  });
+
+  function showImageThumbnail(fileInput) {
+      file = fileInput.files[0];
+      reader = new FileReader();
+
+      reader.onload = function (e) {
+        $("#thumbnail").attr("src", e.target.result);
+        $("#thumbnail").css("display", "block");
+      };
+      reader.readAsDataURL(file);
+    }
+
+
 </script>
+<!-- Github buttons -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+<!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
+<script src="../assets/js/material-dashboard.min.js?v=3.0.1"></script>
 
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 </body>
-
 </html>
