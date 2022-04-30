@@ -24,6 +24,12 @@
     <!-- Nucleo Icons -->
     <link href="./assets/css/nucleo-icons.css" rel="stylesheet" />
     <link href="./assets/css/nucleo-svg.css" rel="stylesheet" />
+
+      
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Font Awesome Icons -->
     <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
     <!-- Material Icons -->
@@ -51,69 +57,67 @@
             <i class='bx bx-chevron-right toggle'></i>
         </header>
 
-        <div class="menu-bar">
-            <div class="menu">
-
-                <li class="search-box" style="visibility: hidden">
-                   
-                     
-                </li>
-
-                <ul class="menu-links">
-
-                  
-                    <li class="nav-link">
-                        <a class="nav-link text-white " href="../index.html">
-                            <i class='bx bx-home-alt icon' title="Dashboard" ></i>
-                            <span class="text nav-text" title="Dashboard">Dashboard</span>
-                        </a>
-                    </li>
-
-                    <li class="nav-link">
-                        <a href="databasepart.html">
-                            <i class='bx bx-bar-chart-alt-2 icon' title="Database Part" ></i>
-                            <span class="text nav-text" title="Database Part">Database Part</span>
-                        </a>
-                    </li>
-
-                    
-
-                    <li class="nav-link">
-                        <a href="pendingrequest.html">
-                             <i class='bx bx-hourglass icon' title="Pending Requset" ></i>
-                            <span class="text nav-text" title="Pending Request">Pending request</span>
-                        </a>
-                    </li>
-
-                    <li class="nav-link">
-                        <a href="Noti.html">
-                            <i class='bx bx-bell icon' title="Notification"></i>
-                            <span class="text nav-text" title="Notification">Notifications</span>
-                        </a>
-                    </li>
-                    <li class="nav-link">
-                      <a href="candidatesetting.html">
-                        <i class='bx bx-user icon' title="Candidate"></i>
-                        <span class="text nav-text" title="Candidates">Candidates</span>
-                      </a>
-                    </li>
-
-                
-
-                </ul>
-            </div>
-
-            <div class="bottom-content">
-                <li class="">
-                    <a href="#">
-                        <i class='bx bx-log-out icon' title="Logout" ></i>
-                        <span class="text nav-text" title="Logout">Logout</span>
-                    </a>
-                </li>
-
-                
-            </div>
+      <div class="menu-bar">
+        <div class="menu">
+      
+          <li class="search-box" style="visibility: hidden">
+      
+      
+          </li>
+      
+          <ul class="menu-links">
+            <li class="nav-link">
+              <a class="nav-link text-white " href="../index.html">
+                <i class='bx bx-home-alt icon' title="Dashboard"></i>
+                <span class="text nav-text" title="Dashboard">Dashboard</span>
+              </a>
+            </li>
+      
+            <li class="nav-link">
+              <a href="databasepart.html">
+                <i class='bx bx-bar-chart-alt-2 icon' title="Database Part"></i>
+                <span class="text nav-text" title="Database Part">Database Part</span>
+              </a>
+            </li>
+      
+      
+      
+            <li class="nav-link">
+              <a href="pendingrequest.html">
+                <i class='bx bx-hourglass icon' title="Pending Request"></i>
+                <span class="text nav-text" title="Pending Request">Pending request</span>
+              </a>
+            </li>
+      
+            <li class="nav-link">
+              <a href="Noti.html">
+                <i class='bx bx-bell icon' title="Notification"></i>
+                <span class="text nav-text" title="Notification">Notifications</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="candidatesetting.html">
+                <i class='bx bx-user icon' title="Candidate"></i>
+                <span class="text nav-text" title="Candidates">Candidates</span>
+              </a>
+            </li>
+      
+      
+      
+          </ul>
         </div>
+      
+        <div class="bottom-content">
+          <li class="">
+            <a href="#">
+              <i class='bx bx-log-out icon' title="Logout"></i>
+              <span class="text nav-text" title="Logout">Logout</span>
+            </a>
+          </li>
+      
+      
+        </div>
+      </div>
 
     </nav>
 
@@ -254,32 +258,39 @@
                             </div>
               
               
-              <div class="input_field" >
-                <label>Upload Party's Photo&nbsp;&nbsp;&nbsp;</label> <br><br>
-                <input type="file" style="border: thick;" name="image" th:field="*{firstname}" id="fileimage" required class="form-control"
+              <div class="input_field" th:field="*{firstname}">
+                <label>Party's Flag&nbsp;&nbsp;&nbsp;</label> <br><br>
+
+<h3> **Display Party Flag here from database**</h3>
+
+                <!--To be inserted Party flag automatically when choose party name from dropdown option-->
+
+
+
+              <!-- <input type="file" style="border: thick;" name="image" th:field="*{firstname}" id="fileimage" required class="form-control"
                   accept="image/png, image/jpeg, image/jpg" /><br />
 
 
-                  <p>
+                 <p>
                 <img id="thumbnail"  src="" height="200px" width="150px"
-                  style="margin-left: 200px; display: none" />
-              </p>
+                  style="margin: 100px; display: none" />
+              </p>-->
               
               
               </div>
               
                             
                         <div class="input_field"> 
-                          <input type="text" name="cname" placeholder="Enter Candidate's Name"  th:field="*{firstname}"required />
+                          <input type="text" name="cname" placeholder="Enter Candidate's Name"  th:field="*{firstname}" required />
                         </div>
                        
                          <div class="input_field">
                                   <label>Upload Candidate's Photo&nbsp;&nbsp;&nbsp;</label><br><br>
-                                  <input type="file" name="image" id="fileimage"  th:field="*{firstname}" required class="form-control"
+                                  <input type="file" name="image" id="fileimage1"  th:field="*{firstname}" required class="form-control"
                                       accept="image/png, image/jpeg, image/jpg" /><br />
               <p>
-                <img id="thumbnail"  src="" height="200px" width="150px"
-                  style="margin-left: 200px; display: none" />
+                <img id="thumbnail1"  src="" height="200px" width="150px"
+                  style="margin: 100px; display: none" />
               </p>
               
                               </div>
@@ -328,24 +339,24 @@
   }
 
 
+    
 
   $(document).ready(function () {
-    $("#fileimage").change(function () {
+    $("#fileimage1").change(function () {
       showImageThumbnail(this);
     });
   });
 
   function showImageThumbnail(fileInput) {
-      file = fileInput.files[0];
-      reader = new FileReader();
+    file = fileInput.files[0];
+    reader = new FileReader();
 
-      reader.onload = function (e) {
-        $("#thumbnail").attr("src", e.target.result);
-        $("#thumbnail").css("display", "block");
-      };
-      reader.readAsDataURL(file);
-    }
-
+    reader.onload = function (e) {
+      $("#thumbnail1").attr("src", e.target.result);
+      $("#thumbnail1").css("display", "block");
+    };
+    reader.readAsDataURL(file);
+  }
 
 </script>
 <!-- Github buttons -->

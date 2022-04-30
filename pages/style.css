@@ -484,22 +484,7 @@ body.dark .home .text {
     opacity: 1;
   }
 }
-@media (max-width: 600px) {
-  .text-sm .col_half{
-    width: 100%;
-    float: none;
-  }
 
-  .bottom_row .col_half {
-    width: 50%;
-    float: left;
-  }
 
-  .form_container .row .col_half.last {
-    border-left: none;
-  }
 
-  .remember_me {
-    padding-bottom: 20px;
-  }
-}
+  
